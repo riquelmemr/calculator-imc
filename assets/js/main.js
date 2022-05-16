@@ -16,7 +16,6 @@ function MyEscope() {
             resulted.innerHTML = `<p class="invalid">Peso ou altura inválida.</p>`;
         }
 
-
         if (imc < 18.5) {
             resulted.innerHTML = `<p class="valid">
             Seu IMC é ${imc.toFixed(2)} <strong>(Abaixo do peso)</strong></p>`;
