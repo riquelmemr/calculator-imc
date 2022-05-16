@@ -2,14 +2,12 @@ function MyEscope() {
     const form = document.querySelector('.form')
     const resulted = document.querySelector('.content-result')
 
-    let imc = 0;
-
     function receiveEvent(evento) {
         evento.preventDefault();
         const weight = form.querySelector('.weight');
         const height = form.querySelector('.height');
 
-        imc = weight.value / (height.value * height.value);
+        const imc = weight.value / (height.value * height.value);
 
         if (weight.value === '' || height.value === '') {
             resulted.innerHTML = `<p class="invalid">Digite seu peso e altura!</p>`;
