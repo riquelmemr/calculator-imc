@@ -58,6 +58,7 @@ function MyEscope() {
     function setResulted(msg, isValid) {
         const resulted = document.querySelector('.resulted');
         resulted.innerHTML = '';
+        
         const p = newP();
 
         if (isValid) {
