@@ -55,10 +55,15 @@ function MyEscope() {
         return imc.toFixed(2);
     }
 
+    function newP() { // cria parágrafo
+        const p = document.createElement('p'); 
+        return p;
+    }
+
     function setResulted(msg, isValid) {
         const resulted = document.querySelector('.resulted');
         resulted.innerHTML = '';
-        
+
         const p = newP();
 
         if (isValid) {
@@ -67,14 +72,9 @@ function MyEscope() {
         else {
             p.classList.add('invalid');
         }
-        
+
         p.innerHTML = msg;
         resulted.appendChild(p);
-    }
-
-    function newP() { // cria parágrafo
-        const p = document.createElement('p'); 
-        return p;
     }
 }
 
