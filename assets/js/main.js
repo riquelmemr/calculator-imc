@@ -61,7 +61,7 @@ function MyEscope() {
     }
 
     function setResulted(msg, isValid) {
-        const resulted = document.querySelector('.resulted');
+        const resulted = document.querySelector('.content-result');
         resulted.innerHTML = '';
 
         const p = newP();
